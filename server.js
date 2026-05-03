@@ -17,15 +17,8 @@ const app = express();
 
 // Middleware - ORDER MATTERS!
 
-const allowedOrigins = [
-  'http://localhost:5173',
-  'https://team-task-manager-frontend-psi.vercel.app',
-  'https://team-task-manager-frontend-psi.vercel.app/',
-  process.env.FRONTEND_URL
-].filter(Boolean);
-
 app.use(cors({
-  origin: 'https://team-task-manager-frontend-three.vercel.app/',
+  origin: 'https://team-task-manager-frontend-three.vercel.app',
   credentials: true
 }));
 
